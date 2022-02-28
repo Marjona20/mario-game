@@ -1,0 +1,46 @@
+.father{
+    width: 700px;
+    height: 300px;
+    border:1px dashed black;
+    border-radius:5%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#mario{
+    width: 50px;
+    height: 70px;
+    position:absolute;
+    bottom: 0;
+    left:0;
+}
+#box{
+    width: 20px;
+    height: 20px;
+    background-color:yellow;
+    border-radius: 100%;
+    position: absolute;
+    bottom:0;
+    right: 0;
+    animation: box 2s infinite linear;
+}
+@keyframes box {
+    0%{left:700px}
+    100%{left:-20px}
+}
+.animate{
+    animation: mario 0.5s linear;
+}
+@keyframes mario {
+    0%{bottom: 0}
+    50%{bottom: 50px}
+    100%{bottom: 0}
+}
+h1{
+    text-align: center;
+}
+.btn-success{
+    padding: 20px;
+    background-color: green;
+    color:white;
+}
